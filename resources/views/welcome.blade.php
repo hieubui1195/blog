@@ -13,8 +13,8 @@
     </head>
     <body>
         <div id='app'>
-            {{-- <example-component></example-component> --}}
             <my-component></my-component>
+            <conditional-component></conditional-component>
         </div>
         <script src="/js/app.js"></script>
     </body>

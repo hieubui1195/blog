@@ -26,6 +26,7 @@ window.Vue = require('vue');
 // });
 
 import MyComponent from './components/MyComponent.vue';
+import ConditionalComponent from './components/ConditionalComponent.vue';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -35,5 +36,8 @@ import MyComponent from './components/MyComponent.vue';
 
 const app = new Vue({
     el: '#app',
-    components: { MyComponent }
+    components: {
+        MyComponent,
+        ConditionalComponent
+    }
 });
