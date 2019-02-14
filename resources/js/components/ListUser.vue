@@ -1,0 +1,45 @@
+<template>
+    <div class="list-user">
+        <h3>List user</h3>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Location</th>
+                <th>DOB</th>
+            </thead>
+            <tbody>
+                <tr v-for="(user, index) in userData" :key="index">
+                    <td>
+                        <a @click="selectUser(user)">{{ user.name.title }} - {{ user.name.last}} {{user.name.first}}</a>
+                    </td>
+                    <td>{{ user.location.city }}</td>
+                    <td>{{ user.dob }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<script>
+import data from './data.json';
+
+export default {
+    data() {
+        return {
+            userData: data,
+            number: 1110,
+            string: 'string 1212'
+        }
+    },
+    methods: {
+        selectUser(user) {
+            this.$emit('userSelected', user, this.number, this.string);
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+
+</style>
+

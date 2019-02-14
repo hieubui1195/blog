@@ -15,6 +15,9 @@
         <div id='app'>
             <my-component></my-component>
             <conditional-component></conditional-component>
+            <list-component></list-component>
+            <user-dashboard></user-dashboard>
+            <life-cicle></life-cicle>
         </div>
         <script src="/js/app.js"></script>
     </body>

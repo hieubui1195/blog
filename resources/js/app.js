@@ -27,6 +27,9 @@ window.Vue = require('vue');
 
 import MyComponent from './components/MyComponent.vue';
 import ConditionalComponent from './components/ConditionalComponent.vue';
+import ListComponent from './components/ListComponent.vue';
+import UserDashboard from './components/UserDashboard.vue';
+import LifeCycle from './components/LifeCycle.vue';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -38,6 +41,9 @@ const app = new Vue({
     el: '#app',
     components: {
         MyComponent,
-        ConditionalComponent
+        ConditionalComponent,
+        ListComponent,
+        UserDashboard,
+        LifeCycle
     }
 });
